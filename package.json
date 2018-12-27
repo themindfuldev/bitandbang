@@ -1,10 +1,10 @@
 {
-  "name": "bitandbang",
+  "name": "themindfuldev",
   "version": "1.3.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "description": "A personal card for Tiago Romero Garcia  (@themindfuldev)",
   "main": "/bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "themindfuldev": "./bin/card.js"
   },
   "repository": {
     "type": "git",
