@@ -15,22 +15,22 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Tiago Romero Garcia'),
-  handle: chalk.white('themindfuldev'),
-  work: chalk.white('Front-end Architect at Avenue Code'),
-  opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('themindfuldev'),
-  npm: chalk.gray('https://npmjs.com/') + chalk.red('~tiagorg'),
-  github: chalk.gray('https://github.com/') + chalk.green('themindfuldev'),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('themindfuldev'),
-  web: chalk.cyan('https://tiagorg.com'),
-  npx: chalk.red('npx') + ' ' + chalk.white('themindfuldev'),
+  name: chalk.yellowBright('Tiago Romero Garcia'),
+  handle: chalk.yellow('themindfuldev'),
+  work: chalk.white('Front-end Architect at ') + chalk.cyanBright('Avenue Code'),
+  twitter: chalk.white('https://twitter.com/') + chalk.greenBright('themindfuldev'),
+  npm: chalk.white('https://npmjs.com/') + chalk.greenBright('~tiagorg'),
+  github: chalk.white('https://github.com/') + chalk.greenBright('themindfuldev'),
+  linkedin: chalk.white('https://linkedin.com/in/') + chalk.greenBright('themindfuldev'),
+  dev: chalk.white('https://dev.to/') + chalk.greenBright('themindfuldev'),
+  web: chalk.white('https://') + chalk.redBright('tiagorg.com'),
+  npx: chalk.magentaBright('npx') + ' ' + chalk.magentaBright('themindfuldev'),
   labelWork: chalk.white.bold('       Work:'),
-  labelOpenSource: chalk.white.bold('Open Source:'),
   labelTwitter: chalk.white.bold('    Twitter:'),
   labelnpm: chalk.white.bold('        npm:'),
   labelGitHub: chalk.white.bold('     GitHub:'),
   labelLinkedIn: chalk.white.bold('   LinkedIn:'),
+  labelDev: chalk.white.bold('     Dev.to:'),
   labelWeb: chalk.white.bold('        Web:'),
   labelCard: chalk.white.bold('       Card:')
 }
@@ -39,23 +39,23 @@ const data = {
 const newline = '\n'
 const heading = `${data.name} / ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
-const opensourcing = `${data.labelOpenSource}  ${data.opensource}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
+const deving = `${data.labelDev}  ${data.dev}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
-               working + newline + // data.labelWork + data.work
-               opensourcing + newline + newline + // data.labelOpenSource + data.opensource
+               working + newline + newline + // data.labelWork + data.work
                twittering + newline + // data.labelTwitter + data.twitter
                npming + newline + // data.labelnpm + data.npm
                githubing + newline + // data.labelGitHub + data.github
                linkedining + newline + // data.labelLinkedIn + data.linkedin
+               deving + newline + // data.labelDev + data.dev
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
 
