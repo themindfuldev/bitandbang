@@ -17,7 +17,7 @@ const options = {
 const data = {
   name: chalk.yellowBright('Tiago Romero Garcia'),
   handle: chalk.yellow('themindfuldev'),
-  work: chalk.white('Front-end Architect at ') + chalk.cyanBright('Avenue Code'),
+  work: chalk.white('Tech Lead at ') + chalk.cyanBright('Pinterest'),
   twitter: chalk.white('https://twitter.com/') + chalk.greenBright('themindfuldev'),
   npm: chalk.white('https://npmjs.com/') + chalk.greenBright('~themindfuldev'),
   github: chalk.white('https://github.com/') + chalk.greenBright('themindfuldev'),
