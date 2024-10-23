@@ -21,14 +21,12 @@ const data = {
   npm: chalk.white('https://npmjs.com/') + chalk.greenBright('~themindfuldev'),
   github: chalk.white('https://github.com/') + chalk.greenBright('themindfuldev'),
   linkedin: chalk.white('https://linkedin.com/in/') + chalk.greenBright('tiagoromero'),
-  dev: chalk.white('https://dev.to/') + chalk.greenBright('themindfuldev'),
   web: chalk.white('https://') + chalk.redBright('tiagoromero.me'),
   npx: chalk.magentaBright('npx') + ' ' + chalk.magentaBright('themindfuldev'),
   labelWork: chalk.white.bold('       Work:'),
   labelnpm: chalk.white.bold('        npm:'),
   labelGitHub: chalk.white.bold('     GitHub:'),
   labelLinkedIn: chalk.white.bold('   LinkedIn:'),
-  labelDev: chalk.white.bold('     Dev.to:'),
   labelWeb: chalk.white.bold('        Web:'),
   labelCard: chalk.white.bold('       Card:')
 }
@@ -40,7 +38,6 @@ const working = `${data.labelWork}  ${data.work}`
 const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const deving = `${data.labelDev}  ${data.dev}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
@@ -48,11 +45,10 @@ const carding = `${data.labelCard}  ${data.npx}`
 const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
                working + newline + newline + // data.labelWork + data.work
-               npming + newline + // data.labelnpm + data.npm
-               githubing + newline + // data.labelGitHub + data.github
+               webing + newline + // data.labelWeb + data.web
                linkedining + newline + // data.labelLinkedIn + data.linkedin
-               deving + newline + // data.labelDev + data.dev
-               webing + newline + newline + // data.labelWeb + data.web
+               githubing + newline + // data.labelGitHub + data.github
+               npming + newline + newline + // data.labelnpm + data.npm
                carding // data.labelCard + data.npx
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
